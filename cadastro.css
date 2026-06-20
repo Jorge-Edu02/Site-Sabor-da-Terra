@@ -11,12 +11,20 @@ body{
     background:#708238;
 }
 
+header{
+    background-color:#708238;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 1%;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 8% auto;
+    margin: 6% auto;
     width: 28%;
     height: auto;
     min-height: 650px;
@@ -92,9 +100,21 @@ button{
 }
 
 @media (max-width: 768px){
+
+    header{
+        position: fixed; /* O cabeçalho fica preso a tela */
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        padding: 10px 1%;
+        box-sizing: border-box; /* Deixa que o padding não passe de 100% */
+    }
+
     .container {
         width: 80%;
         font-size: 16px;
+        margin-top: 80px;
     }
 
     form{
